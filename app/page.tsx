@@ -19,15 +19,7 @@ const GREETINGS = [
 ];
 
 export default function HomePage() {
-  const { progress, hydrated, setMood, setFocusMode } = useProgress();
-
-  if (!hydrated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-brand-600 text-2xl animate-pulse">⚡ MathSpark</div>
-      </div>
-    );
-  }
+  const { progress, setMood, setFocusMode } = useProgress();
 
   const greeting = GREETINGS[new Date().getDay() % GREETINGS.length];
   const firstUnstartedTopic = topics.find(t => !progress.masteryByTopic[t.id]);
