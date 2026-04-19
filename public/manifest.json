@@ -1,0 +1,12 @@
+{
+  "name": "MathSpark",
+  "short_name": "MathSpark",
+  "description": "Luna's personal algebra coach",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ff",
+  "theme_color": "#7c3aed",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
